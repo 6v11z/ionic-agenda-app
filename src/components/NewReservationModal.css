@@ -1,0 +1,9 @@
+/* ion-datetime::part(native) {
+  --background-rgb;
+} */
+
+ion-datetime {
+  --background: #1e1e1e;
+  --wheel-fade-background-rgb: 30, 30, 30;
+  --wheel-highlight-background: #2e2e2e; 
+}

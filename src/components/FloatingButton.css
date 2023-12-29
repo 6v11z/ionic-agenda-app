@@ -1,0 +1,7 @@
+ion-fab-button ion-icon {
+  --ionicon-stroke-width: 32px;
+}
+
+ion-fab-button::part(native) {
+  border-radius: 50%;
+}
