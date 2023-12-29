@@ -37,7 +37,7 @@ const NewReserationModal = () => {
   const [startDate, setStartDate] = useState(getTodayDate())
   const [endDate, setEndDate] = useState(getTodayDate())
 
-  const handleStartDateChange = (e) => {
+  const handleStartDateChange = (e: CustomEvent) => {
     const selectedDateISO = e.detail.value
     const formattedDate = format(parseISO(selectedDateISO), "dd/MM/yyyy")
     const formattedHour = format(parseISO(selectedDateISO), "HH:mm")
@@ -50,7 +50,7 @@ const NewReserationModal = () => {
     setStartDate(newDate)
   }
 
-  const handleEndDateChange = (e) => {
+  const handleEndDateChange = (e: CustomEvent) => {
     const selectedDateISO = e.detail.value
     const formattedDate = format(parseISO(selectedDateISO), "dd/MM/yyyy")
     const formattedHour = format(parseISO(selectedDateISO), "HH:mm")
